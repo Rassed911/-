@@ -45,3 +45,5 @@ docker-compose up --build
 ![Demo](https://github.com/Rassed911/Marketing_Campaign_Predictor/blob/main/streamlit2.png)
 
 ![Demo](https://github.com/Rassed911/Marketing_Campaign_Predictor/blob/main/7.png)
+
+![Demo](https://github.com/Rassed911/Marketing_Campaign_Predictor/blob/main/3.png)
