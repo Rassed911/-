@@ -65,8 +65,10 @@ docker-compose up --build
 В ходе разработки были выявлены важные закономерности:
 
 -Наличие детей значительно снижает вероятность покупки премиальных товаров (вино).
+![Demo](https://github.com/Rassed911/Marketing_Campaign_Predictor/blob/main/6.png)
 
 -Наиболее значимыми признаками для модели оказались Total_Spending и Income.
+![Demo](https://github.com/Rassed911/Marketing_Campaign_Predictor/blob/main/7.png)
 
 -Клиенты, совершившие покупку недавно (Recency), более склонны к участию в новых кампаниях.
 
@@ -74,6 +76,6 @@ docker-compose up --build
 
 ![Demo](https://github.com/Rassed911/Marketing_Campaign_Predictor/blob/main/streamlit2.png)
 
-![Demo](https://github.com/Rassed911/Marketing_Campaign_Predictor/blob/main/7.png)
+
 
 ![Demo](https://github.com/Rassed911/Marketing_Campaign_Predictor/blob/main/3.png)
