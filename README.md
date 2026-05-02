@@ -40,6 +40,6 @@ docker-compose up --build
 -Наиболее значимыми признаками для модели оказались Total_Spending и Income.
 -Клиенты, совершившие покупку недавно (Recency), более склонны к участию в новых кампаниях.
 
-![Demo]([G:\Projects_Py\Analiz_ludei_marketing\streamlit2.png](https://github.com/Rassed911/Marketing_Campaign_Predictor/blob/main/stremlit1.png))
+![Demo](https://github.com/Rassed911/Marketing_Campaign_Predictor/blob/main/stremlit1.png)
 
 ![Demo](G:\Projects_Py\Analiz_ludei_marketing\streamlit1.png)
