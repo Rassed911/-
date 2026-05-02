@@ -19,7 +19,6 @@ with st.sidebar:
 
 # 2. Логика запроса к FastAPI
 if st.button("Предсказать отклик"):
-    # Формируем данные в формате JSON, который ждет наш FastAPI
     payload = {
         "Income": income,
         "Age": age,
