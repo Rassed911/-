@@ -2,17 +2,17 @@ import pandas as pd
 from catboost import CatBoostClassifier
 import joblib
 import sqlite3
-# 1. Загрузка данных (используем твой очищенный датасет)
+# 1. Загрузка данных
 print("Подключаюсь к базе данных...")
 # 1. Устанавливаем соединение с базой
 conn = sqlite3.connect('marketing.db')
-# 2. Пишем SQL-запрос (самое важное!)
+# 2. Пишем SQL-запрос 
 query = "SELECT * FROM customers"
 # 3. Загружаем данные в Pandas через SQL
 df = pd.read_sql(query, conn)
 conn.close()
 print(f"Данные из SQL получены! Размер: {df.shape}")
-# 2. Создание новых признаков (те, что мы обсуждали)
+# 2. Создание новых признаков 
 df['Age'] = 2021 - df['Year_Birth']
 mnt_cols = [col for col in df.columns if 'Mnt' in col]
 df['Total_Spending'] = df[mnt_cols].sum(axis=1)
@@ -34,8 +34,7 @@ model = CatBoostClassifier(
     verbose=100 # будет показывать прогресс каждые 100 шагов
 )
 model.fit(X, y)
-# 5. СОХРАНЕНИЕ (Самый важный этап для инженера)
-# Сохраняем саму модель
+# 5. СОХРАНЕНИЕ
 model.save_model('catboost_model.cbm')
 
 # Сохраняем список колонок, чтобы API знал, в каком порядке подавать данные
