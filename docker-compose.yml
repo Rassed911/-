@@ -1,19 +1,14 @@
 
 
 services:
-  # Твой бэкенд, который мы уже собрали
   backend:
     build: .
     container_name: marketing_api_service
     ports:
       - "8000:8000"
-    # База sqlite уже внутри образа, так что он просто стартует
-
-  # Твое новое "лицо" на Streamlit
   frontend:
     build: .
     container_name: marketing_ui_service
-    # Мы используем тот же образ, но запускаем другую команду
     command: streamlit run streamlit_app.py --server.port 8501 --server.address 0.0.0.0
     ports:
       - "8501:8501"
