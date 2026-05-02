@@ -42,4 +42,4 @@ docker-compose up --build
 
 ![Demo](https://github.com/Rassed911/Marketing_Campaign_Predictor/blob/main/stremlit1.png)
 
-![Demo](G:\Projects_Py\Analiz_ludei_marketing\streamlit1.png)
+![Demo](https://github.com/Rassed911/Marketing_Campaign_Predictor/blob/main/streamlit2.png)
