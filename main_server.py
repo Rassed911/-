@@ -18,7 +18,6 @@ class CustomerData(BaseModel):
 app = FastAPI(title="Marketing Prediction API")
 
 # 3. Загружаем модель и фичи при старте
-# Убедись, что эти файлы лежат в той же папке!
 model = CatBoostClassifier()
 model.load_model('catboost_model.cbm')
 features = joblib.load('model_features.joblib')
@@ -32,7 +31,7 @@ def predict(customer: CustomerData):
     try:
         data = pd.DataFrame([customer.dict()])
         
-        # 1. Предсказание (делаем максимально надежно)
+        # 1. Предсказание
         prediction = model.predict(data)
         # Извлекаем число, даже если это массив [1] или [[1]]
         pred_value = int(np.array(prediction).flatten()[0])
